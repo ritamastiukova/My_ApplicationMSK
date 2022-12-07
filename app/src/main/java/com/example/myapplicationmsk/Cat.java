@@ -3,8 +3,8 @@ package com.example.myapplicationmsk;
 import android.util.Log;
 
 public class Cat extends Animal {
-    private int age;
-     private String name;
+    protected int age;
+     String name;
 
     public Cat() {
 
