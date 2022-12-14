@@ -8,6 +8,7 @@ public class Cat extends  Animal {
     String name;
     String breed;
     String color;
+    final static int numberOfLegs = 4;
 
     public Cat(){
         age = 2;
@@ -29,5 +30,9 @@ public class Cat extends  Animal {
     }
     public void talk(String hello){
         Log.i("talk()", "Meow! " + hello);
+    }
+
+    public static String whatCatsLike(){
+        return "I like playing, jumping and sometimes scratching";
     }
 }
