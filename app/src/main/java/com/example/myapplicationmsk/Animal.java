@@ -12,3 +12,4 @@ public class Animal {
         return "I can breathe";
     }
 }
+
