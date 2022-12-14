@@ -1,5 +1,4 @@
 package com.example.myapplicationmsk;
-
 import android.util.Log;
 
 public class Animal {
@@ -7,6 +6,6 @@ public class Animal {
     boolean isAlive;
 
     public String breathe(){
-        return " I can breathe";
+        return  "I can breathe";
     }
 }
