@@ -1,4 +1,5 @@
 package com.example.myapplicationmsk;
+
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.*;
@@ -20,13 +21,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Cat cat32 = new Cat(1, "Ceasar");
-        cat32.talk();
-        Cat cat33 = new Cat(5, "Petr");
-        cat33.talk();
-        Cat cat34 = new Cat(8, "Boris");
-        cat34.talk();
-
+        Cat cat1 = new Cat();
+        cat1.catchMouse(1);
+        cat1.catchMouse(3);
     }
 
 }
