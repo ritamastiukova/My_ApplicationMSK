@@ -3,6 +3,7 @@ package com.example.myapplicationmsk;
 import android.util.Log;
 
 public class Lion extends Cat{
+
     public Lion(int i, String murza) {
     }
 

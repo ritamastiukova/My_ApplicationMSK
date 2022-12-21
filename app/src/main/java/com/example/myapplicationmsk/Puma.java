@@ -1,8 +1,9 @@
 package com.example.myapplicationmsk;
 
+
 import android.util.Log;
 
-public class Puma extends Cat implements Movable, Printable{
+public class Puma extends Cat{
     public void someMethod() {
         this.age = 3;
         this.name = "Puma";
@@ -13,16 +14,6 @@ public class Puma extends Cat implements Movable, Printable{
 
     @Override
     public void draw() {
-        Log.i("draw()","Draw Puma");
-    }
 
-    @Override
-    public void move() {
-        Log.i("move()","Move overriden Puma");
-    }
-
-    @Override
-    public void print() {
-        Log.i("print()","Print Puma");
     }
 }
