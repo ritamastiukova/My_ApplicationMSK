@@ -3,7 +3,7 @@ import android.util.Log;
 
 import java.util.Locale;
 
-public abstract class Cat extends Animal{
+public class Cat extends Animal{
     int age;
     String name;
     final static int numberOfLegs= 4;
@@ -122,7 +122,7 @@ public abstract class Cat extends Animal{
         }
         Mouse mouse = new Mouse("white", mouseWeight);
 
-        if(mouse.weight < 1){
+        if(mouse.weight < 2){
             Log.i("cat say ", "I will eat you!" + mouse.mouseVoice());
         }else{
             Log.i("cat say ", "I afraid you!");

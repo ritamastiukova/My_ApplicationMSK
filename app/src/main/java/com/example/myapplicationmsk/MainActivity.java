@@ -3,53 +3,27 @@ package com.example.myapplicationmsk;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.*;
-import android.view.View;
-import android.widget.Button;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements Printable{
+    public class MainActivity extends AppCompatActivity {
 
-    //private
-    //package access
-    //protected
-    //public
+        //private
+        //package access
+        //protected
+        //public
 
-    Cat myCat;
-    int z;
+        Cat myCat;
+        int z;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main);
 
-        Cat cat = new Lion();
-        cat.talk();
-
-        Printable printable = new Puma();
-        printable.print();
-        ((Puma) printable).move();
-
-        Puma puma = new Puma();
-        Log.i("speedOfMoving", "" + puma.speedOfMoving);
-
-        Log.i("speedOfMoving", "" + ((Puma) printable).speedOfMoving);
-
-        Log.i("speedOfMoving", "" + Movable.speedOfMoving);
-
+            Cat cat1 = new Cat();
+            cat1.catchMouse(1);
+            cat1.catchMouse(3);
+        }
 
     }
-
-    void printAnyObject(Printable printable){
-
-    }
-
-    void printAnyObject(Puma puma){
-
-    }
-
-    @Override
-    public void print() {
-
-    }
-}
